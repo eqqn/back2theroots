@@ -23,3 +23,6 @@ follow the format ' path : inputs : F=failure condition'   , -s specifies port ,
 zip2john zipfile.zip > passwordhash
 
 john --format=pkzip passwordhash  ( depends on the format of archive/hash, look at previous output )
+
+## PDFCrack
+pdfcrack -f locked.pdf -w rockyou.txt
