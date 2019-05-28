@@ -16,7 +16,7 @@ hydra -s 45885 -l admin www.bruteforce.me -P rockyou.txt http-form-post "/:passw
 
 "/login.php:user=^USER^&pass=^PASS^:S=successful"  from docs.
 
-follow the format ' path : inputs : F=failure condition"   , -s specifies port , even if u send pass only, specify user for it to run smoothly
+follow the format ' path : inputs : F=failure condition'   , -s specifies port , even if u send pass only, specify user for it to run smoothly
 
 
 ## Zip2John
