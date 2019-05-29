@@ -26,3 +26,5 @@ john --format=pkzip passwordhash  ( depends on the format of archive/hash, look 
 
 ## PDFCrack
 pdfcrack -f locked.pdf -w rockyou.txt
+
+## Cyberchef is really good on the fly
