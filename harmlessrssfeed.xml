@@ -3,26 +3,6 @@
 <foo xmlns:xi="http://www.w3.org/2001/XInclude">
 <xi:include parse="text" href="file:///etc/passwd"/></foo> 
   <channel>
-    <title>&file;</title>
-    <description>&file;</description>
-    <link>&file;</link>
-    <category domain="www.dmoz.com">&file;</category>
-    <copyright>&file;</copyright>
-    <docs>&file;</docs>
-    <language>&file;</language>
-    <lastBuildDate>&file;</lastBuildDate>
-    <managingEditor>&file;</managingEditor>
-    <pubDate>&file;</pubDate>
-    <webMaster>&file;</webMaster>
-    <generator>&file;</generator>
-    <image>
-      <url>&file;</url>
-      <title>&file;</title>
-      <link>&file;</link>
-      <description>&file;</description>
-      <width>&file;</width>
-      <height>&file;</height>
-    </image>
     <item>
       <title>RSS Solutions for Restaurants</title>
       <description>&lt;b&gt;FeedForAll &lt;/b&gt;helps Restaurant&apos;s communicate with customers. Let your customers know the latest specials or events.&lt;br&gt;
