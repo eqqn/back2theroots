@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="windows-1252"?>
 <rss version="2.0">
-  <!DOCTYPE channel [ <!ENTITY file SYSTEM "file:///etc/passwd"> ]]>
+  <!DOCTYPE channel [ <!ENTITY file SYSTEM "file:///etc/passwd"> ]>
   <channel>
     <title>&file;</title>
     <description>RSS is a fascinating technology. The uses for RSS are expanding daily. Take a closer look at how various industries are using the benefits of RSS in their businesses.</description>
