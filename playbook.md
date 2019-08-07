@@ -58,11 +58,11 @@ pdfcrack -f locked.pdf -w rockyou.txt
 ### wfuzz
 
 #### hide 404
-./wfuzz -w wordlist/general/big.txt --hc 404 http://xxxxxxxxzxzx.zxz/FUZZ
+`./wfuzz -w wordlist/general/big.txt --hc 404 http://xxxxxxxxzxzx.zxz/FUZZ`
 #### parameters
-./wfuzz -w wordlist/general/megabeast.txt --hh 24 http://docker.hackthebox.eu:43658/api/action.php?FUZZ=1
+`./wfuzz -w wordlist/general/megabeast.txt --hh 24 http://docker.hackthebox.eu:43658/api/action.php?FUZZ=1`
 #### numericals
-./wfuzz -z range,0-10000 --hh 27 http://xxxxxx.xxx/api/action.php?reset=FUZZ
+`./wfuzz -z range,0-10000 --hh 27 http://xxxxxx.xxx/api/action.php?reset=FUZZ`
 ### data
-./wfuzz -w wordlist/general/big.txt -d "FUZZ=1" http://xxxxx.xxx/api/action.php
+`./wfuzz -w wordlist/general/big.txt -d "FUZZ=1" http://xxxxx.xxx/api/action.php`
 
