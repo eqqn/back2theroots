@@ -66,3 +66,7 @@ pdfcrack -f locked.pdf -w rockyou.txt
 ### data
 `./wfuzz -w wordlist/general/big.txt -d "FUZZ=1" http://xxxxx.xxx/api/action.php`
 
+
+## Reversing
+
+Dealing with stripped binaries https://reverseengineering.stackexchange.com/questions/1935/how-to-handle-stripped-binaries-with-gdb-no-source-no-symbols-and-gdb-only-sho
