@@ -1,9 +1,6 @@
 ### Host files from current dir 
 ` python -m SimpleHttpServer 8080 `
  
-### enable postgress for faster msf startup 
-systemctl enable postgresql
-
 ### python tools for network 
 https://github.com/SecureAuthCorp/impacket
 
@@ -14,6 +11,7 @@ cut -d " " -f 4
 
 ### Website tech identification
 whatweb - Kali cli tool for identifying site ( better than most)
+
 Wappalyzer - extension on browser
 
 ### netdiscover - arp in the network
@@ -22,16 +20,23 @@ netdiscover -r 192.168.88.0/24
 
 ### nmap
 -sS - "Stealh scan" (not really , just syn, synack and RST - no sessions established) 
+
 nmap -sS 192.168.88.128
+
 nmap -T4 -p- -A
+
 -p- - all ports  ( default is top 1000 ports) ;   -A - scan everything , version, OS, fingerprint
 
 ### SMB (and metasploit workflow)
 
 msfconsole
+
 search smb 
+
 use auxiliary/scanner/smb/smb_version 
+
 set RHOSTS 192.168.88.128
+
 run
 
 ### nice to knows 
@@ -49,10 +54,17 @@ use foxyproxy addon and add burpsuite settings to it. easy switching
 
 ## Legacy
 nmap -sS -p- 10.10.10.4 
+
 nmap -A -p139,445,3389 10.10.10.4
+
 nmap --script vuln -p445 10.10.10.4    ( looked at write-up for this to scan for vulns )
+
 Find MS08-067(works) and  ms17-010(doesnt work)   Eternalblue.
+
 search -f user.txt    , same for root. gg
+
+learned from video :  getuid - windows whoami equivalent , sysinfo - obvious, help - meterpreter help ( lots of useful commands) ;
+getsystem attempts to privesc ( might be a bit reckless)
 
 ## Lame
 nmap --script vuln -p3632 10.10.10.3
