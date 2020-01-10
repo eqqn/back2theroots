@@ -123,3 +123,6 @@ FTP : if file transfer is failing, switch to binary mode with "I" option
 
 privesc : sometimes inside meterpreter "getsystem" is enough lol ( not here)
 
+### undisclosed machine
+
+privesc  : sudo -l  .  nano file import
