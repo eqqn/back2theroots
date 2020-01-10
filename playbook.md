@@ -18,6 +18,9 @@ hydra -s 45885 -l admin www.bruteforce.me -P rockyou.txt http-form-post "/:passw
 
 follow the format ' path : inputs : F=failure condition'   , -s specifies port , even if u send pass only, specify user for it to run smoothly
 
+## ssh2john
+
+crack hashes from rsa private key certificates ( passphrase locked)
 
 ## Zip2John
 zip2john zipfile.zip > passwordhash
