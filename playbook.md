@@ -70,3 +70,6 @@ pdfcrack -f locked.pdf -w rockyou.txt
 ## Reversing
 
 Dealing with stripped binaries https://reverseengineering.stackexchange.com/questions/1935/how-to-handle-stripped-binaries-with-gdb-no-source-no-symbols-and-gdb-only-sho
+
+## sudo
+if you got something juicy in sudo -l , but still cant read get the command to work, try impersonating another user with -u
