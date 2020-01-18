@@ -164,4 +164,9 @@ file creation and edit time can be a hint...  ( learned from write-up..)
 while impersonating: sudo -u scriptmanager /bin/bash  will transfer you into shell on behalf of scriptmanager, without *su* command. 
 
 
+### Grandpa
+2017-7269, iis6 webdav.
+exploit suggester - > exploit/windows/local/ms14_058_track_popup_menu
+
+### Grandma
 
