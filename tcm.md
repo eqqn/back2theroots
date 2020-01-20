@@ -170,3 +170,10 @@ exploit suggester - > exploit/windows/local/ms14_058_track_popup_menu
 
 ### Grandma
 
+### netmon
+anon ftp, lots of enum. idk how OP came up with "programdata" folder to check for backups but whatever. 
+I also found the config on WINDOWS folder, but no old backups there.
+
+https://github.com/M4LV0/PRTG-Network-Monitor-RCE
+psexec.py pentest@10.10.10.152
+impacket psexec - execute procces remotely if you have creds. cool. need to learn more of these windows features...
