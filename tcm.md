@@ -177,3 +177,4 @@ I also found the config on WINDOWS folder, but no old backups there.
 https://github.com/M4LV0/PRTG-Network-Monitor-RCE
 psexec.py pentest@10.10.10.152
 impacket psexec - execute procces remotely if you have creds. cool. need to learn more of these windows features...
+video lesson - look at the official docs for directories , and sometimes it may allow you to refer to them directly.. 
