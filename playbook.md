@@ -25,7 +25,7 @@ crack hashes from rsa private key certificates ( passphrase locked)
 ## Zip2John
 zip2john zipfile.zip > passwordhash
 
-john --format=pkzip passwordhash  ( depends on the format of archive/hash, look at previous output )
+john --format=pkzip passwordhash --wordlist=rockyou.txt ( depends on the format of archive/hash, look at previous output )
 
 ## PDFCrack
 pdfcrack -f locked.pdf -w rockyou.txt
