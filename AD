@@ -12,7 +12,22 @@ Defines every type of object that can be stored in the directory, enforces rules
 Class Object - what objects can be created in the directory (i.e User , Computer) 
 Attribute Object  information that can be attached to an object ( display name) 
 
+Domains - administrative boundary for applying plocies to groups of objects.
+authentication and authorization boundary that provides way to limit the scope of access to resources.
 
+Organizational Unit - AD containers that contain users, groups, computers, other OUs
+
+
+## Objects 
+User - enables network resource access for a user.
+InetOrgperson - similar to user account. Used for compatibility with other directory services.
+Contacts - used primarily to assign email addresses to external users. Does not enable network access.
+Groups - Used to simplify access control administration.
+Computers - enables authentication and auditing of computer access to resources
+Printers - to simplify proccess of locating and connecting to printers
+Shared folders - enables users to search for shared folders based on properties.
+
+Trust - directional ( i trust you )  and transitive ( i trust everyone you trust) 
 
 
 
