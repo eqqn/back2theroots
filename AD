@@ -1,0 +1,24 @@
+Hierarchy - single DC , or DC in a family - Forest. 
+
+### AD DS - Data Store
+Contains database files and processes that store and manage directory information for users,services and applications.
+( users, objects, PASSWORD HASHES for all users in that domain ) ( crackable offline, passthehash, golden ticket )
+
+Consists of the Ntds.dit file   , stored %SystemRoot%\NTDS folder on all DC's
+
+### AD DS Schema
+Defines every type of object that can be stored in the directory, enforces rules.
+
+Class Object - what objects can be created in the directory (i.e User , Computer) 
+Attribute Object  information that can be attached to an object ( display name) 
+
+
+
+
+
+
+
+
+
+
+Credit @thecybermentor course
